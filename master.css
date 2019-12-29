@@ -1,0 +1,65 @@
+.open {
+			color: #ffffff;
+			font-size: 2.3em;
+			background-color: #000000;
+			border: none;
+			margin: 10px;
+			cursor: pointer;
+		}
+
+		button.open:hover {
+			color: #00c25d;
+		}
+
+		.sidebar {
+			background-color: #ffffff;
+			font-family: "Source Code Pro", monospace;
+			font-weight: 400;
+			padding-top: 60px;
+			height: 100%;
+			width: 0;
+			top: 0;
+			left: 0;
+			overflow-x: hidden;
+			transition: 0.5s;
+			position: fixed;
+			z-index: 1;
+		}
+
+		.sidebar a {
+			display: block;
+			color: #000000;
+			font-size: 1.2em;
+			text-decoration: none;
+			padding: 8px 8px 8px 30px;
+			transition: 0.3s;
+		}
+
+		.sidebar a:hover {
+			color: #00c25d;
+		}
+
+		.sidebar .close {
+			position: absolute;
+			top: 0;
+			right: 20px;
+			margin-left: 50px;
+			font-size: 40px;
+		}
+
+		.menuButton {
+			height: 0px;
+		}
+
+		#menuButton {
+			transition: margin-left 0.5s;
+			padding: 16px;
+		}
+
+		::selection {
+			color: #00c25d;
+		}
+
+		::-moz-selection {
+			color: #00c25d;
+		}
