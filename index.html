@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Karla&display=swap" rel="stylesheet">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<title>Laura Price</title>
+	<script>
+		var i = 0;
+		var text = "LAURA PRICE";
+		var speed = 60;
+
+		function typing() {
+			if (i < text.length) {
+				document.getElementById("laura").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing, speed);
+			}
+		};
+
+		function openSidebar() {
+		  document.getElementById("sidebar").style.width = "240px";
+		};
+
+		function closeSidebar() {
+		  document.getElementById("sidebar").style.width = "0";
+		};
+	</script>
+	<style>
+		body {
+			background-color: #000000;
+			height: 100%;
+		}
+
+		.name {
+		  height: 100%;
+		  width: 100%;
+		  display: flex;
+		  position: fixed;
+		  align-items: center;
+		  justify-content: center;
+		  z-index: -1;
+		}
+
+		.name h1 {
+			color: #ffffff;
+			font-family: "Source Code Pro", monospace;
+			font-size: 5em;
+			font-weight: 400;
+			letter-spacing: 10px;
+			/*text-shadow: 0 0 3px #ffffff;*/
+		}
+	</style>
+</head>
+<body onload="typing()">
+	<header>
+		<div id="sidebar" class="sidebar">
+			<a href="javascript:void(0)" class="close" onclick="closeSidebar()">×</a>
+			<a href="about.html">ABOUT</a>
+			<a href="skills.html">SKILLS</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="#">CV</a>
+			<a href="#">CONTACT</a>
+		</div>
+		<div class="menuButton">
+			<button class="open" onclick="openSidebar()">&#8801;</button>
+		</div>
+	</header>
+	<main>
+		<div class="name">
+			<h1 id="laura"></h1>
+		</div>
+	</main>
+</body>
+</html>
