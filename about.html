@@ -1,1 +1,102 @@
-t
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Karla&display=swap" rel="stylesheet">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<title>About</title>
+	<script>
+		var i = 0;
+		var text = "ABOUT";
+		var speed = 85;
+
+		function typing() {
+			if (i < text.length) {
+				document.getElementById("about").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing, speed);
+			}
+		};
+
+		function openSidebar() {
+		  document.getElementById("sidebar").style.width = "240px";
+		};
+
+		function closeSidebar() {
+		  document.getElementById("sidebar").style.width = "0";
+		};
+	</script>
+	<style>
+		body  {
+			background-color: #000000;
+			margin: 0;
+		}
+
+		h1.about {
+			display: inline-block;
+			color: #00c25d;
+			font-family: "Source Code Pro";
+			font-size: 2em;
+			padding: 4px 6px 4px 6px;
+			margin-top: 85px;
+			margin-right: 45px;
+			border-top: 1px solid #ffffff;
+			border-bottom: 1px solid #ffffff;
+			letter-spacing: 5px;
+			float: right;
+		}
+
+		.gridContainer {
+			display: grid;
+			grid-template-columns: 50% 50%;
+		}
+
+		.gridSection1 p {
+			display: inline-block;
+			color: #ffffff;
+			font-family: "Karla";
+			font-size: 1em;
+			font-weight: 400;
+			margin-left: 45px;
+			margin-right: 45px;
+			line-height: 1.5;
+		}
+
+		.gridSection2 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body onload="typing()">
+	<header>
+		<div id="sidebar" class="sidebar">
+			<a href="javascript:void(0)" class="close" onclick="closeSidebar()">×</a>
+			<a href="index.html">HOME</a>
+			<a href="skills.html">SKILLS</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="#">CV</a>
+			<a href="#">CONTACT</a>
+		</div>
+		<div class="menuButton">
+			<button class="open" onclick="openSidebar()">&#8801;</button>
+		</div>
+	</header>
+	<main>
+		<div class="gridContainer">
+			<div class="gridSection1">
+				<h1 id="about" class="about"></h1>
+				<p>Recently graduated with a Bachelor’s in Management Information Systems from Utah State University, I am excited to find a data science niche that enables me to produce visualization reports, write mind-bending SQL queries, and program cool things.</p>
+				<p>Technology has always fascinated me, and after being introduced to the world of data analytics, I knew I wanted to pursue a career in the field. Data visualization, report development, dashboard design, and SQL querying became passions as my experience increased through academic projects and a business intelligence internship. Furthermore, I began to engage in Python programming and web development, thus initiating my desire to build a website completely from scratch.</p>
+				<p>To briefly expound on the website, I just want to say that it is one of the most exciting projects I have pursued by myself without academic direction. After learning HTML, CSS, and minimal vanilla JavaScript in my final semester of college, this site is my first attempt at putting those newfound skills to use. While this site may not be perfect, I am so happy to be able to have a domain that showcases some of my passion for coding.</p>
+				<p>The journey into analytics and programming has just begun for me, but I will continue accelerating my skill set and continue growing as a learner and as an individual.</p>
+			</div>
+			<div class="gridSection2">
+				<img src="about_image.png">
+			</div>
+		</div>
+	</main>
+</body>
+</html>
