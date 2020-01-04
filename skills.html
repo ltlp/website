@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Karla&display=swap" rel="stylesheet">
+	<link rel="icon" href="favicon.png">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<title>Skills</title>
+	<script>
+		var i = 0;
+		var text = "SKILLS";
+		var speed = 85;
+
+		function typing() {
+			if (i < text.length) {
+				document.getElementById("skills").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing, speed);
+			}
+		};
+
+		function openSidebar() {
+		  document.getElementById("sidebar").style.width = "240px";
+		};
+
+		function closeSidebar() {
+		  document.getElementById("sidebar").style.width = "0";
+		};
+	</script>
+	<style>
+		body {
+			background-color: #000;
+			/*background: linear-gradient(90deg, #000000 50%, #ffffff 50%);*/
+		}
+
+		h1.skills {
+			color: #00c25d;
+			font-family: "Source Code Pro";
+			font-size: 2em;
+			margin: auto;
+			text-align: center;
+			letter-spacing: 5px;
+		}
+
+		div.skills {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			grid-template-rows: 50% 50%;
+			color: #fff;
+			margin-left: 45px;
+			margin-right: 50px;
+		}
+
+		.skills h2 {
+			color: #e05e00;
+			font-family: "Source Code Pro";
+			font-size: 1.3em;
+			text-align: center;
+			margin-top: 75px;
+		}
+
+		div.section1, div.section2, div.section3, div.section4 {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			font-family: "Karla";
+			text-align: center;
+			/*border: 1px solid #ffffff;*/
+		}
+	</style>
+</head>
+<body onload="typing()">
+	<header>
+		<div id="sidebar" class="sidebar">
+			<a href="javascript:void(0)" class="close" onclick="closeSidebar()">×</a>
+			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="#">CV</a>
+			<a href="#">CONTACT</a>
+		</div>
+		<div class="menuButton">
+			<button class="open" onclick="openSidebar()">&#8801;</button>
+		</div>
+	</header>
+	<main>
+		<h1 id="skills" class="skills"></h1>
+<!-- 		<div class="skills">
+			<div class="programming">
+				<h2>PROGRAMMING LANGUAGES</h2>
+				<div class="section1">
+					<p>Python</p>
+					<p>SQL</p>
+					<p>HTML/CSS</p>
+					<p>JavaScript</p>
+				</div>
+			</div>
+			<div class="data">
+				<h2>DATA ANALYTICS & DATABASES</h2>
+				<div class="section2">
+					<p>Power BI</p>
+					<p>Microsoft SQL Server</p>
+					<p>Jupyter Notebooks</p>
+					<p>RapidMiner</p>
+				</div>
+			</div>
+			<div class="business">
+				<h2>BUSINESS</h2>
+				<div class="section3">
+					<p>Report Development</p>
+					<p>Microsoft Office</p>
+					<p>Business Intelligence (BI)</p>
+					<p>Customer Relationship Management (CRM)</p>
+				</div>
+			</div>
+			<div class="other">
+				<h2>OTHER</h2>
+				<div class="section4">
+					<p>Linux</p>
+					<p>Information Technology</p>
+					<p>macOS</p>
+					<p>Adobe Suite</p>
+				</div> -->
+		</div>
+	</main>
+</body>
+</html>
