@@ -57,18 +57,13 @@
 			letter-spacing: 5px;
 		}
 
-		.tabsContainer {
-			display: flex;
-		}
-
 		.tabs {
-			display: inline-flex;
 			background-color: #000;
 			border: 1px solid #fff;
 			padding: 0px;
-			margin: 15px auto 0px auto;
+			margin: 15px 80px 0px 80px;
 			text-align: center;
-			overflow: visible;
+			overflow: hidden;
 		}
 
 		.tabs button {
@@ -76,27 +71,25 @@
 			background-color: inherit;
 			font-family: "Karla";
 			font-size: 0.9em;
-			padding: 12px 14px;
+			padding: 12px 16px;
 			border: none;
 			outline: none;
-			/*float: left;*/
+			align-content: center;
+			float: center;
 			cursor: pointer;
 			transition: 0.3s;
 		}
 
 		.tabs button:hover {
-			font-weight: 700;
+			color: #00c25d;
 		}
 
 		.tabs button.active {
-			color: #000;
-			background-color: #fff;
-			font-weight: 700;
+			color: #00c25d;
 		}
 
 		.allContent {
 			margin: 0px 80px 0px 80px;
-			/*margin: 0px auto 0px auto;*/
 			border: none;
 		}
 
@@ -104,7 +97,7 @@
 			display: none;
 			background-color: #fff;
 			border-top: none;
-			padding: 10px 15px 10px 15px;
+			padding: 10px 15px;
 		}
 
 		.tabContent h3 {
@@ -189,25 +182,15 @@
 	</header>
 	<main>
 		<h1 id="projects" class="projects"></h1>
-		<div class="tabsContainer">
-			<div class="tabs">
-				<button class="tab" onclick="openTab(event, 'tab0')">laurathuy.com</button>
-				<button class="tab" onclick="openTab(event, 'tab1')">Flask API & RethinkDB</button>
-				<button class="tab" onclick="openTab(event, 'tab2')">WriterWorkshop.com</button>
-				<button class="tab" onclick="openTab(event, 'tab3')">Web Scraping & Parsing Data</button>
-				<button class="tab" onclick="openTab(event, 'tab4')">KPI Dashboard</button>
-				<button class="tab" onclick="openTab(event, 'tab5')">PSTRMI</button>
-				<button class="tab" onclick="openTab(event, 'tab6')">Data Analytics Consulting Project</button>
-			</div>
+		<div class="tabs">
+			<button class="tab" onclick="openTab(event, 'tab1')">Flask API & RethinkDB</button>
+			<button class="tab" onclick="openTab(event, 'tab2')">WriterWorkshop.com</button>
+			<button class="tab" onclick="openTab(event, 'tab3')">Web Scraping & Parsing Data</button>
+			<button class="tab" onclick="openTab(event, 'tab4')">KPI Dashboard</button>
+			<button class="tab" onclick="openTab(event, 'tab5')">PSTRMI</button>
+			<button class="tab" onclick="openTab(event, 'tab6')">Data Analytics Consulting Project</button>
 		</div>
 		<div class="allContent">
-			<div id="tab0" class="tabContent">
-				<h3>laurathuy.com</h3>
-				<h4><b>Date:</b> December 2019 - Present</h4>
-				<h4><b>Emphasis:</b> Web Development, HTML Structuring, CSS / JavaScript Manipulation</h4>
-				<h4><b>Description:</b> This personal project was inspired by recently learned skills in HTML, CSS, and [vanilla] JavaScript. Built completely from scratch, this is my first attempt at producing a website. As you can see, it is still in the development stage, but feel free to navigate at the current progress.</h4>
-				<h4><b>Source Code:</b><a href="https://github.com/ltlp/website"> View</a></h4>
-			</div>
 			<div id="tab1" class="tabContent">
 				<h3>Flask API & RethinkDB</h3>
 				<h4><b>Date:</b> October - December 2019</h4>
