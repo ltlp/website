@@ -44,6 +44,7 @@
 	<style>
 		body {
 			background-color: #000;
+			overflow-y: scroll;
 		}
 
 		h1.projects {
@@ -56,11 +57,18 @@
 			letter-spacing: 5px;
 		}
 
+		.tabsContainer {
+			display: flex;
+		}
+
 		.tabs {
+			display: inline-flex;
+			/*display: inline-block;*/
 			background-color: #000;
 			border: 1px solid #fff;
 			padding: 0px;
-			margin: 15px 80px 0px 80px;
+			/*margin: 15px 80px 0px 80px;*/
+			margin: 15px auto 0px auto;
 			text-align: center;
 			overflow: hidden;
 		}
@@ -70,11 +78,10 @@
 			background-color: inherit;
 			font-family: "Karla";
 			font-size: 0.9em;
-			padding: 12px 16px;
+			padding: 12px 14px;
 			border: none;
 			outline: none;
-			align-content: center;
-			float: left;
+			/*float: left;*/
 			cursor: pointer;
 			transition: 0.3s;
 		}
@@ -90,7 +97,8 @@
 		}
 
 		.allContent {
-			margin: 0px 80px 0px 80px;
+			/*margin: 0px 80px 0px 80px;*/
+			margin: 0px auto 0px auto;
 			border: none;
 		}
 
@@ -98,7 +106,7 @@
 			display: none;
 			background-color: #fff;
 			border-top: none;
-			padding: 10px 15px;
+			padding: 10px 15px 10px 15px;
 		}
 
 		.tabContent h3 {
@@ -151,7 +159,6 @@
 			list-style: square;
 		}
 
-
 		a {
 			color: #ee2524;
 			text-decoration: none;
@@ -184,14 +191,16 @@
 	</header>
 	<main>
 		<h1 id="projects" class="projects"></h1>
-		<div class="tabs">
-			<button class="tab" onclick="openTab(event, 'tab0')">laurathuy.com</button>
-			<button class="tab" onclick="openTab(event, 'tab1')">Flask API & RethinkDB</button>
-			<button class="tab" onclick="openTab(event, 'tab2')">WriterWorkshop.com</button>
-			<button class="tab" onclick="openTab(event, 'tab3')">Web Scraping & Parsing Data</button>
-			<button class="tab" onclick="openTab(event, 'tab4')">KPI Dashboard</button>
-			<button class="tab" onclick="openTab(event, 'tab5')">PSTRMI</button>
-			<button class="tab" onclick="openTab(event, 'tab6')">Data Analytics Consulting Project</button>
+		<div class="tabsContainer">
+			<div class="tabs">
+				<button class="tab" onclick="openTab(event, 'tab0')">laurathuy.com</button>
+				<button class="tab" onclick="openTab(event, 'tab1')">Flask API & RethinkDB</button>
+				<button class="tab" onclick="openTab(event, 'tab2')">WriterWorkshop.com</button>
+				<button class="tab" onclick="openTab(event, 'tab3')">Web Scraping & Parsing Data</button>
+				<button class="tab" onclick="openTab(event, 'tab4')">KPI Dashboard</button>
+				<button class="tab" onclick="openTab(event, 'tab5')">PSTRMI</button>
+				<button class="tab" onclick="openTab(event, 'tab6')">Data Analytics Consulting Project</button>
+			</div>
 		</div>
 		<div class="allContent">
 			<div id="tab0" class="tabContent">
