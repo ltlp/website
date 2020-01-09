@@ -4,172 +4,176 @@ body {
 }
 
 .open {
-			color: #fff;
-			font-size: 2.3em;
-			background-color: #000;
-			border: none;
-			margin: 20px;
-			cursor: pointer;
-		}
+	color: #fff;
+	font-size: 2.3em;
+	background-color: #000;
+	border: none;
+	margin: 20px;
+	cursor: pointer;
+}
 
-		button.open:hover {
-			color: #00c25d;
-		}
+button:focus {
+	outline: none;
+}
 
-		.sidebar {
-			background-color: #fff;
-			font-family: "Source Code Pro", monospace;
-			font-weight: 400;
-			padding-top: 60px;
-			height: 100%;
-			width: 0;
-			top: 0;
-			left: 0;
-			overflow-x: hidden;
-			transition: 0.5s;
-			position: fixed;
-			z-index: 1;
-		}
+button.open:hover {
+	color: #00c25d;
+}
 
-		.sidebar a {
-			display: block;
-			color: #000;
-			font-size: 1.2em;
-			text-decoration: none;
-			padding: 8px 8px 8px 30px;
-			transition: 0.3s;
-		}
+.sidebar {
+	background-color: #fff;
+	font-family: "Source Code Pro", monospace;
+	font-weight: 400;
+	padding-top: 60px;
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	position: fixed;
+	z-index: 1;
+}
 
-		.sidebar a:hover {
-			color: #00c25d;
-		}
+.sidebar a {
+	display: block;
+	color: #000;
+	font-size: 1.2em;
+	text-decoration: none;
+	padding: 8px 8px 8px 30px;
+	transition: 0.3s;
+}
 
-		.sidebar .close {
-			position: absolute;
-			top: 0;
-			right: 20px;
-			margin-left: 50px;
-			font-size: 40px;
-		}
+.sidebar a:hover {
+	color: #00c25d;
+}
 
-		.menuButton {
-			height: 0px;
-		}
+.sidebar .close {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	margin-left: 50px;
+	font-size: 40px;
+}
 
-		#menuButton {
-			transition: margin-left 0.5s;
-			padding: 16px;
-		}
+.menuButton {
+	height: 0px;
+}
 
-		.projectInfo {
-			background-color: #fff;
-			height: 100%;
-			width: 0;
-			top: 0;
-			right: 0;
-			overflow-x: hidden;
-			transition: 0.5s;
-			position: fixed;
-			z-index: 1;
-		}
+#menuButton {
+	transition: margin-left 0.5s;
+	padding: 16px;
+}
 
-		.projectInfo h3 {
-			font-family: "Source Code Pro";
-			font-size: 1.5em;
-			margin-bottom: 35px;
-			padding-left: 20px;
-		}
+.projectInfo {
+	background-color: #fff;
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	position: fixed;
+	z-index: 1;
+}
 
-		.projectInfo h4 {
-			font-family: "Karla";
-			font-size: 1em;
-			font-weight: 400;
-			line-height: 1.5;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
+.projectInfo h3 {
+	font-family: "Source Code Pro";
+	font-size: 1.5em;
+	margin-bottom: 35px;
+	padding-left: 20px;
+}
 
-		.projectInfo h5 {
-			color: #ee2524;
-			font-family: "Source Code Pro";
-			font-size: 1.2em;
-			font-weight: 400;
-			letter-spacing: 2px;
-			margin-top: 35px;
-			margin-bottom: 15px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
+.projectInfo h4 {
+	font-family: "Karla";
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.5;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
-		.projectInfo h6 {
-			font-family: "Karla";
-			font-size: 1em;
-			font-weight: 400;
-			margin-top: 0px;
-			margin-bottom: 10px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}		
+.projectInfo h5 {
+	color: #ee2524;
+	font-family: "Source Code Pro";
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
-		.projectInfo h7 {
-			font-family: "Karla";
-			font-size: 1em;
-			margin-bottom: 5px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
+.projectInfo h6 {
+	font-family: "Karla";
+	font-size: 1em;
+	font-weight: 400;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}		
 
-		.projectInfo p {
-			font-family: "Karla";
-			line-height: 1.5;
-			margin-top: 0px;
-			padding-top: 0px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
+.projectInfo h7 {
+	font-family: "Karla";
+	font-size: 1em;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
-		.projectInfo ul {
-			font-family: "Karla";
-			line-height: 1.5;
-			list-style: square;
-			padding-left: 40px;
-			padding-right: 20px;
-		}
+.projectInfo p {
+	font-family: "Karla";
+	line-height: 1.5;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
-		.projectInfo a {
-			color: #ee2524;
-			text-decoration: none;
-		}
+.projectInfo ul {
+	font-family: "Karla";
+	line-height: 1.5;
+	list-style: square;
+	padding-left: 40px;
+	padding-right: 20px;
+}
 
-		.projectInfo a:hover {
-			color: #00c25d;
-		}
+.projectInfo a {
+	color: #ee2524;
+	text-decoration: none;
+}
 
-		.projectInfo span {
-			font-family: "Source Code Pro";
-			font-size: 0.9em;
-			font-weight: 700;
-		}
+.projectInfo a:hover {
+	color: #00c25d;
+}
 
-		.projectInfo .close {
-			color: #000;
-			position: absolute;
-			top: 0;
-			right: 20px;
-			margin-left: 50px;
-			font-size: 40px;
-			font-weight: 700;
-		}
+.projectInfo span {
+	font-family: "Source Code Pro";
+	font-size: 0.9em;
+	font-weight: 700;
+}
 
-		.projectInfo .close:hover {
-			color: #ff0000;
-			font-weight: 700;
-		}
+.projectInfo .close {
+	color: #000;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	margin-left: 50px;
+	font-size: 40px;
+	font-weight: 700;
+}
 
-		::selection {
-			color: #00c25d;
-		}
+.projectInfo .close:hover {
+	color: #ff0000;
+	font-weight: 700;
+}
 
-		::-moz-selection {
-			color: #00c25d;
-		}
+::selection {
+	color: #00c25d;
+}
+
+::-moz-selection {
+	color: #00c25d;
+}
