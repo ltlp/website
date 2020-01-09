@@ -84,11 +84,11 @@
 		<div class="allButtons">
 			<div class="gridContainer">
 				<button onclick="openFlaskInfo()">Flask API & RethinkDB</button>
-				<button>WriterWorkshop.com</button>
-				<button>Web Scraping & Parsing Data</button>
-				<button>KPI Dashboard</button>
-				<button>PSTRMI</button>
-				<button>Data Analytics Consulting Project</button>
+				<button onclick="openWriterInfo()">WriterWorkshop.com</button>
+				<button onclick="openWebInfo()">Web Scraping & Parsing Data</button>
+				<button onclick="openKpiInfo()">KPI Dashboard</button>
+				<button onclick="openPstrmiInfo()">PSTRMI</button>
+				<button onclick="openDataInfo()">Data Analytics Consulting Project</button>
 			</div>
 		</div>
 		<div class="projectInfo">
@@ -130,6 +130,137 @@
 				<h6><b>Data Exposure</b></h6>
 				<p>Flask was used as the data API. The API does not allow for users to do anything but view the data originally collected from the data acquisition section.</p>
 				<p>To view the Flask API and receive the URL address for the data, type this in the browser: <span>http://127.0.0.1:5001/</span></p>
+			</div>
+			<div id="writerInfo" class="projectInfo">
+				<a href="javascript:void(0)" class="close" onclick="closeWriterInfo()">×</a>
+				<h3>WriterWorkshop.com</h3>
+				<h4><b>Date:</b> September - December 2019</h4>
+				<h4><b>Emphasis:</b> Web Development with HTML / CSS / JS</h4>
+				<h4><b>Description:</b> This group project was conducted through my Designing Graphical User Interfaces for Electronic Commerce course. It was a semester-long production emphasizing user interface design, HTML structuring, CSS implementation, and JavaScript development.</h4>
+				<h4><b>Source Code:</b><a href="https://github.com/ltlp/projects/tree/master/WriterWorkshop.com"> View</a></h4>
+				<h5><b>OVERVIEW</b></h5>
+				<h6><b>WriterWorkshop.com</b></h6>
+				<p>The web application we designed is called WriterWorkshop.com. This website enables users to post their creative writing on a forum and receive feedback from other writers. It provides writers with a resource they can utilize to better their original pieces.</p>
+				<br>
+				<h6><b>Objectives</b></h6>
+				<p>The project objective is altruism. Below are three ways this will be accomplished:</p>
+				<p><b><i>Give writers a platform for sharing and receiving constructive feedback.</i></b><br>
+				Users can post their comments and suggestions to other writers’ submitted work. This will aid in writing development and improvement, as the web application aims to create a platform that gives users a space to freely express their thoughts on other people’s writing. Users will depend on honest and genuine answers from a community of writers and editors.</p>
+				<p><b><i>Host a healthy environment for writers to communicate with other writers in a general forum.</i></b><br>
+				For users who don’t want to post something but want to brainstorm or start a conversation, there is a general forum that allows writers to collaborate and discuss ideas. The goal is to create a web application that users can trust in order to bring their thoughts to light.</p>
+				<p><b><i>Provide a free, open resource.</i></b><br>
+				The altruistic approach of this web application is rooted in the fact that this is free for all users. By providing a no-pay forum that is open to the community, it allows everyone to share their writing and ideas without money being a concern.</p>
+				<br>
+				<h6><b>Webpages</b></h6>
+				<p>There is a master CSS file [master.css] that dictates a consistent style among every page.</p>
+				<ul>
+					<li><b>About Us</b> - This page provides some background information regarding the creation and reputation of WriterWorkshop.com. It includes a brief history of the web application’s development, as well as user reviews and contact information.</li>
+					<li><b>Forgot Password</b> - This page offers the user the option to reset his/her password.</li>
+					<li><b>Forum</b> - This page hosts user discussions involving all things writing. It contains user-generated topics and conversations and allows the community to interact with one another.</li>
+					<li><b>Forum Submission</b> - This page allows the user to create a new forum post.</li>
+					<li><b>Homepage</b> - This page is the introductory face of the site. It gives the user a brief synopsis of how to get started as well as provides previews of user content.</li>
+					<li><b>Login</b> - This page allows a user to either sign in or create an account.</li>
+					<li><b>New Works</b> - This page gives users the ability to submit a new work to the site.</li>
+					<li><b>Post History</b> - This page lists all of a user’s posts to the site.</li>
+					<li><b>User Profile (My Account)</b> - This page details the user’s profile and lists stats specific to the site. There are some graphic visualizations as well.</li>
+					<li><b>User Submission</b> - This page highlights an example of a user submission. It provides basic functionality for nominating if a comment is credible (helpful) or not, as well as a place to enter one’s own comment(s).</li>
+					<li><b>Works</b> - This page lists all works that were posted on the site. These can be filtered down so users can find exactly what they are looking for.</li>
+				</ul>
+			</div>
+			<div id="webInfo" class="projectInfo">
+				<a href="javascript:void(0)" class="close" onclick="closeWebInfo()">×</a>
+				<h3>Web Scraping & Parsing Data</h3>
+				<h4><b>Date:</b> September - October 2019</h4>
+				<h4><b>Emphasis:</b> Web Scraping, Data Parsing</h4>
+				<h4><b>Description:</b></h4>
+			</div>
+			<div id="kpiInfo" class="projectInfo">
+				<a href="javascript:void(0)" class="close" onclick="closeKpiInfo()">×</a>
+				<h3>KPI Dashboard</h3>
+				<h4><b>Date:</b> May - August 2019</h4>
+				<h4><b>Emphasis:</b> Business Intelligence (BI), Report Development, Database Administration</h4>
+				<h4><b>Description:</b></h4>
+			</div>
+			<div id="pstrmiInfo" class="projectInfo">
+				<a href="javascript:void(0)" class="close" onclick="closePstrmiInfo()">×</a>
+				<h3>PSTRMI</h3>
+				<h4><b>Date:</b> January - April 2019</h4>
+				<h4><b>Emphasis:</b> Project Management, Database Administration, Application Development</h4>
+				<h4><b>Description:</b> This project was created with a small team for Steiny’s Family Sports Bar and Grill in Logan, UT. Designed to track, organize, and view inventory levels, PSTRMI (Programmable System for Tracking and Recording Modifications to Inventory) is a desktop application developed with Visual Basic and Microsoft SQL Server.</h4>
+				<h4><b>Full Report:</b><a href="https://drive.google.com/file/d/1NofnfAgiPfHXWypMK5O84zjeBycT144W/view?usp=sharing"> View</a></h4>
+				<h5><b>SYSTEM REQUEST</b></h5>
+				<h6><b>Goal Statement</b></h6>
+				<p>By April 18, 2019, JLI will deliver an inventory tracking
+				desktop application for Steiny’s Family Sports Grill that
+				can help reduce inventory input error and/or
+				calculation error by 25% at little or no cost to the
+				client.</p>
+				<br>
+				<h6><b>Business Needs</b></h6>
+				<p>Due to the fact that the current inventory system is out of date and disorganized, with
+				very limited information/data being generated, Steiny’s needs a new inventory tracking
+				system. Inventory orders are placed with mistakes and ingredients run out before the
+				next inventory order due to errors made by employees when they are “just looking for
+				what is low.” A reconciliation between what is purchased and what has actually been
+				used is not available (i.e. no idea how much free food is given away). Also, there are no
+				alerts when an ingredient is low (i.e. down to one package).</p>
+				<br>
+				<h6><b>Business Requirements</b></h6>
+				<ul>
+					<li>Show current level of inventory.</li>
+					<li>Notify manager when items are running low.</li>
+					<li>Update ingredient levels based on menu items sold.</li>
+				</ul>
+				<br>
+				<h6><b>Business Value</b></h6>
+				<p>The inventory tracking system will help Steiny’s reduce inventory error by 25%, which will
+				increase accuracy and efficiency. The system will also reduce costs in the form of
+				wasted and/or expired inventory (food). Customer satisfaction will increase due to an
+				organized inventory. The company will save $280/month in free/voided/stolen food
+				purchases (20% of a monthly average total of $1400) as well as save $150 in wasted
+				food (calculated from JJ’s estimate).</p>
+				<br>
+				<h6><b>Special Issues</b></h6>
+				<p>Possible issues could include compatibility issues that result from off-menu or custom
+				orders and user error when data is inputted into the inventory system.</p>
+			</div>
+			<div id="dataInfo" class="projectInfo">
+				<a href="javascript:void(0)" class="close" onclick="closeDataInfo()">×</a>
+				<h3>Data Analytics Consulting Project</h3>
+				<h4><b>Date:</b> August - December 2017</h4>
+				<h4><b>Emphasis:</b> Big Data Analytics, Data Modeling, Business Intelligence (BI)</h4>
+				<h4><b>Description:</b> This project required working with a small group to address business issues regarding advertising, hiring, and company costs using data analysis techniques. The project emphasized the use of data programs such as RapidMiner and Microsoft SQL Server to run various analyses in order to provide data-centric recommendations for a client.</h4>
+				<h4><b>Full Report:</b><a href="https://drive.google.com/open?id=1u8c3ooRCh06wv9d3XxFfhV7a6tsznp32"> View</a></h4>
+				<h5><b>EXECUTIVE SUMMARY</b></h5>
+				<p>This report is the result of a request from Atomyak to utilize their sales, customers,
+				products, and employee data to produce data-centric recommendations on how they
+				can increase their profits by changing how they conduct some aspects of their
+				business.</p>
+				<p>The first concern that Atomyak had us analyze with was their advertising targeting and
+				messaging. Through a k-Means clustering analysis we were able to identify four
+				customer sets and specific messages that we recommend Atomyak use to target their
+				messaging and advertisement using their 25-million-dollar budget.</p>
+				<p>The second issue we worked on was reducing the number of kayaks that needed to be
+				sent to the in-house shop to add trims; a long process whose wait time frustrated and
+				even deterred some customers from buying altogether. To solve this, we analyzed
+				sales data using association rules in order to determine if there was a trim combination
+				purchased often enough to justify making that combination a standard model for stores
+				to have in stock. We found four combinations, described them, and explained how to
+				market them to customers. We recommend that the shops should keep these preconfigured
+				models in stock to cut back on the wait time for custom kayaks.</p>
+				<p>The third inefficiency they noted was hiring, retaining, and promoting sales staff. We
+				conducted a linear regression to find the 'BestEmployee' and 'PotentialHire' using
+				MgrScore, SC Rank, HelpScore, and Lawsuit. From the model we were able to form two
+				formulas (on a scale from 1 to 5) that Atomyak can use to determine who to hire,
+				retain, and promote.</p>
+				<p>Finally, Atomyak was concerned about the amount of money being spent on sending
+				damaged kayaks through the diagnostics bay before being sent to their required
+				service departments. Through a decision tree analysis, we determined three problems
+				that could be predicted well enough through our model to financially justify skipping
+				the diagnostics bay and instead sending them straight to their required service
+				departments. We recommend running problems observed in the shop through our
+				model and skipping the diagnostics bay if the model outputs a “reactor”, “electrical”, or
+				“other” result.</p>
 			</div>
 		</div>
 	</main>
