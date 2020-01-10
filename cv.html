@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Karla&display=swap" rel="stylesheet">
+	<link rel="icon" href="favicon.png">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="master.js"></script>
+	<script type="text/javascript" src="cv.js"></script>
+	<title>CV</title>
+	<style>
+		h1.cv {
+			color: #fff;
+			background-color: #000;
+			font-size: 2em;
+			text-align: center;
+			letter-spacing: 5px;
+			margin: 0px;
+			padding: 50px;
+		}
+	</style>
+</head>
+<body onload="typing()">
+	<header>
+		<div id="sidebar" class="sidebar">
+			<a href="javascript:void(0)" class="close" onclick="closeSidebar()">×</a>
+			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="#">CONTACT</a>
+		</div>
+		<div class="menuButton">
+			<button class="open" onclick="openSidebar()">&#8801;</button>
+		</div>
+	</header>
+	<main>
+		<div class="section1">
+			<h1 id="cv" class="cv"></h1>
+		</div>		
+	</main>
+</body>
+</html>
