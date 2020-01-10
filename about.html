@@ -6,46 +6,17 @@
 	<link rel="icon" href="favicon.png">
 	<link href="master.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="master.js"></script>
-	<script type="text/javascript" src="about.js"></script>
-	<title>About</title>
+	<script type="text/javascript" src="cv.js"></script>
+	<title>CV</title>
 	<style>
-		body  {
-			background-color: #000;
-		}
-
-		h1.about {
-			display: inline-block;
-			color: #00c25d;
-			font-family: "Source Code Pro";
-			font-size: 2em;
-			padding: 4px 6px 4px 6px;
-			margin-top: 55px;
-			margin-right: 45px;
-			border-top: 1px solid #fff;
-			border-bottom: 1px solid #fff;
-			letter-spacing: 5px;
-			float: right;
-		}
-
-		.gridContainer {
-			display: grid;
-			grid-template-columns: 50% 50%;
-		}
-
-		.gridSection1 p {
-			display: inline-block;
+		h1.cv {
 			color: #fff;
-			font-family: "Karla";
-			font-size: 1em;
-			font-weight: 400;
-			margin-left: 45px;
-			margin-right: 45px;
-			line-height: 1.5;
-		}
-
-		.gridSection2 {
-			display: inline-block;
-			overflow: hidden;
+			background-color: #000;
+			font-size: 2em;
+			text-align: center;
+			letter-spacing: 5px;
+			margin: 0px;
+			padding: 50px;
 		}
 	</style>
 </head>
@@ -54,8 +25,8 @@
 		<div id="sidebar" class="sidebar">
 			<a href="javascript:void(0)" class="close" onclick="closeSidebar()">×</a>
 			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT</a>
 			<a href="projects.html">PROJECTS</a>
-			<a href="#">CV</a>
 			<a href="#">CONTACT</a>
 		</div>
 		<div class="menuButton">
@@ -63,18 +34,9 @@
 		</div>
 	</header>
 	<main>
-		<div class="gridContainer">
-			<div class="gridSection1">
-				<h1 id="about" class="about"></h1>
-				<p>Recently graduated with a Bachelor’s in Management Information Systems from Utah State University, I am excited to find a data science niche that enables me to produce visualization reports, write mind-bending SQL queries, and program cool things.</p>
-				<p>Technology has always fascinated me, and after being introduced to the world of data analytics, I knew I wanted to pursue a career in the field. Data visualization, report development, dashboard design, and SQL querying became passions as my experience increased through academic projects and a business intelligence internship. Furthermore, I began to engage in Python programming and web development, thus initiating my desire to build a website completely from scratch.</p>
-				<p>To briefly expound on the website, I just want to say that it is one of the most exciting projects I have pursued by myself without academic direction. After learning HTML, CSS, and minimal vanilla JavaScript in my final semester of college, this site is my first attempt at putting those newfound skills to use. While this site may not be perfect, I am so happy to be able to have a domain that showcases some of my passion for coding.</p>
-				<p>The journey into analytics and programming has just begun for me, but I will continue accelerating my skill set and continue growing as a learner and as an individual.</p>
-			</div>
-			<div class="gridSection2">
-				<img src="about_image.png">
-			</div>
-		</div>
+		<div class="section1">
+			<h1 id="cv" class="cv"></h1>
+		</div>		
 	</main>
 </body>
 </html>
