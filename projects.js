@@ -42,30 +42,24 @@ function openDataInfo() {
 
 function closeFlaskInfo() {
 	document.getElementById("flaskInfo").style.width = "0";
-	document.getElementById("main").style.marginRight = "0";
 };
 
 function closeWriterInfo() {
 	document.getElementById("writerInfo").style.width = "0";
-	document.getElementById("main").style.marginRight = "0";
 };
 
 function closeWebInfo() {
 	document.getElementById("webInfo").style.width = "0";
-	document.getElementById("main").style.marginRight = "0";
 };
 
 function closeKpiInfo() {
 	document.getElementById("kpiInfo").style.width = "0";
-	document.getElementById("main").style.marginRight = "0";
 };
 
 function closePstrmiInfo() {
 	document.getElementById("pstrmiInfo").style.width = "0";
-	document.getElementById("main").style.marginRight = "0";
 };
 
 function closeDataInfo() {
 	document.getElementById("dataInfo").style.width = "0";
-	document.getElementById("main").style.marginRight = "0";
-};
+}; 
