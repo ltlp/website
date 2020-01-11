@@ -12,11 +12,74 @@
 		h1.cv {
 			color: #fff;
 			background-color: #000;
+			font-family: "Source Code Pro";
 			font-size: 2em;
 			text-align: center;
 			letter-spacing: 5px;
 			margin: 0px;
 			padding: 50px;
+		}
+
+		h2 {
+			font-family: "Source Code Pro";
+			font-size: 2.8em;
+			text-align: center;
+		}
+
+		h3 {
+			font-family: "Karla";
+			font-size: 1.7em;
+		}
+
+		h4 {
+			font-family: "Karla";
+			font-size: 1.2em;
+		}
+
+		p {
+			font-family: "Karla";
+			font-size: 1.1em;
+		}
+
+		.section1, .section2 {
+			align-self: center;
+		}
+
+		.education {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			color: #000;
+			background-color: #fff;
+			margin: 0px;
+			padding: 50px;
+		}
+
+		.affiliation {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			color: #fff;
+			background-color: #000;
+			margin: 0px;
+			padding: 50px;
+		}
+
+		.experience {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			color: #000;
+			background-color: #fff;
+			margin: 0px;
+			padding: 50px;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			color: #fff;
+			background-color: #000;
+			margin: 0px;
+			padding: 50px;
+		}
 		}
 	</style>
 </head>
@@ -34,9 +97,55 @@
 		</div>
 	</header>
 	<main>
-		<div class="section1">
+		<div class="title">
 			<h1 id="cv" class="cv"></h1>
-		</div>		
+		</div>	
+		<div class="education">
+			<div class="section1">
+				<h2>EDUCATION</h2>
+			</div>
+			<div class="section2">
+				<h3>Utah State University</h3>
+				<p><i>August 2016 - December 2019</i></p>
+				<p>B.S., Management Information Systems</p>
+				<p>Logan, UT</p>
+			</div>
+		</div>	
+		<div class="affiliation">
+			<div class="section1">
+				<h2>AFFILIATIONS</h2>
+			</div>
+			<div class="section2">
+				<h3>The National Society of Leadership and Success</h3>
+				<p>The National Society of Leadership and Success (Sigma Alpha Pi) recognizes scholar excellence and leadership capabilities, making membership an honorable achievement among students. As the Team Facilitator of my Success Networking Team, I was in charge of organizing bi-weekly meetings with my group and leading discussions about creating and accomplishing future goals.</p>
+				<h3>USU Invests</h3>
+				<p>A club at Utah State University that involves learning and designing Quantopian algorithms for stock trading.</p>
+			</div>
+		</div>
+		<div class="experience">
+			<div class="section1">
+				<h2>EXPERIENCE</h2>
+			</div>
+			<div class="section2">
+				<h3>Student Technician</h3>
+				<h4>Utah State University</h4>
+				<p><i>June 2018 - December 2019</i></p>
+				<p>Logan, UT</p>
+				<p>Troubleshooted basic issues with Apple and Windows operating systems, aided in simple authentication and networking issues, and assisted customers with professional technological help.</p>
+				<h3>Business Intelligence Intern</h3>
+				<h4>MarketStar</h4>
+				<p><i>May 2019 - August 2019</i>
+				<p>Ogden, UT</p>
+				<p>Wrote queries using T-SQL in MS SQL Server to analyze raw client data, developed KPI reports, data visualizations, and company/client dashboards in Power BI, utilized and built front-end CRM software for data entry, analysis, and reporting.</p>
+			</div>
+		</div>
+		<div class="skills">
+			<div class="section1">
+				<h2>SKILLS</h2>
+			</div>
+			<div class="section2">
+			</div>
+		</div>
 	</main>
 </body>
 </html>
