@@ -1,6 +1,6 @@
 var i = 0;
 var text = "CURRICULUM VITAE";
-var speed = 60;
+var speed = 85;
 
 function typing() {
 	if (i < text.length) {
